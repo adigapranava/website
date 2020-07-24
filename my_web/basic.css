@@ -11,13 +11,18 @@ body{			/*body*/
 .header{   		/*headder*/
 	background-color: rgb(0,0,0);
 	padding: 0 0 0 30% ;
-	z-index: -1;
+	position: relative;  
 }
 .float_right{
 	float: right;
 }
 .top_navi_bar{
 	list-style-type: none;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
 }
 ul{		/*top navigation*/
   list-style-type: none;
@@ -32,8 +37,7 @@ ul{		/*top navigation*/
 
 li {
   float: left;
-  width: 20%;
-  height: 30%;
+  width: 33.33%;
 }
 li a {
   display: block;
