@@ -4,6 +4,7 @@
 	<title>pranava</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Top header -->
@@ -11,10 +12,15 @@
 	<div class= "top_navi_bar">
 			<img class="flex_img" width=70% src="photos\flex.png">	
 	</div>
-	<div class="signin dropdown" style="background-color: none; position: absolute;z-index: 3; top: 20px; right: -6%;"> 
+	<div class="logo_li" style="position: absolute;z-index: 3; top: 20px; left : 2%;"> 
+	  	<a href="#home">
+	  		<img class="logo_img" width = 100% src="photos\logo.png">
+	  	</a> 
+	</div> 
+	<div class="signin dropdown" style="background-color: none; position: absolute;z-index: 3; top: 20px; right: -6%; transform: 0.5s;"> 
 		  	<a href="#signin" class="dropbtn">
 		  		<img width = 45% src="photos\signin.png">
-		  	</a> 
+		  	</a>
 		  	<div class="dropdown-content" style="position: fixed; right: 2px; width: 25%;">
 				<a href="#" style="border-left: 6px solid red; border-right: 6px solid red; background-color: #212F3D ">
 					<img width = 25% style="position: relative; top: 10%; left: 40%; bottom: 10%;border: 5px solid #ffffff;	border-radius: 50%;" src="photos\signin3.png">
@@ -30,49 +36,107 @@
 
 <!-- sticky navigation bar -->
 <ul class= "navi_bar">
-	<li class="logo_li"> 
-		  	<a href="#home">
-		  		<img class="logo_img" width = 50% src="photos\logo.png">
-		  	</a> 
-	  </li>
 	  <li class="home_li"> 
 		  	<a class="active" href="#home">
-		  		<img width=20% src="photos\home.png">
+		  		<img width=17% src="photos\home.png">
 		  	</a> 
 	  </li>
 	  <li class="news_li"> 
 		  	<a href="#news">
-		  		<img width=18% src="photos\news.png">
+		  		<img width=14% src="photos\news.png">
 		  	</a> 
 	  </li>
 	  <li class="contact_li"> 
 		  	<a href="#contact">
-		  		<img width=16% src="photos\contact.png">
+		  		<img width=12% src="photos\contact.png">
 		  	</a> 
 	  </li>
 </ul>
 
-<h3>Sticky Navigation Bar Example</h3>
-<p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
-<p><strong>Note:</strong> Internet Explorer, Edge 15 and earlier versions do not support sticky positioning. Safari requires a -webkit- prefix.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+<div class="row" style="font-family: 'Noto Sans', sans-serif;">
+  <div class="column side">
+    <h2 >About Me:</h2>
+    <p ><b>Photo of me:</b></p>
+    <img width= 90% style=" box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.5);border-left: 10px solid white;border-right: 10px solid white;" src="photos\p2.jpeg" 
+    alt = "my photo" >
+    <p><b>Name: </b>Pranava Adiga</p>
+    <p>Are you asking for my name?
+		Oh! My name is Pranava, Pranava Adiga.
+		Im basically from Kunapura,A town in Karnataka.
+		I love speaking in kannada.By now you could have
+		 guessed my hobbies right?
+		Yeh! exactly Photography is my hobby. And I like coding too , I had made 3-4 games using python and I'm learning <b>machine learning</b></p>
+  </div>
+  
+  <div class="column middle" style="height: 100%">
+    <h2 style="text-align: center;">Photographs: </h2>
+    <div style="font-family: 'Varela Round', sans-serif;" class="container">
 
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <div class="card">
 
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-<p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <div class="face face1">
+          <div class="content">
+            <img src="photos\monuments_logo.png">
+            <h3>Monument Photography</h3>
+          </div>
+        </div>
 
+        <div class="face face2">
+          <div class="content">
+            <p>
+              Death comes to all, but great achievements build a 
+              monument which shall endure until the sun grows cold. ...<br>
+            </p>
 
+            <a href="#">See All</a>
+          </div>
+        </div>
+
+  </div>
+  
+  <div class="card">
+
+    <div class="face face1">
+          <div class="content">
+            <img src="photos\potrait_logo2.png">
+            <h3>Portrait Photography</h3>
+          </div>
+        </div>
+
+        <div class="face face2">
+          <div class="content">
+            <p>
+              When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.<br>
+            </p>
+            <a href="#">See All</a>
+          </div>
+        </div>
+
+  </div>
+  
+  <div class="card">
+    
+        <div class="face face1">
+          <div class="content">
+            <img src="photos\random_logo2.png">
+            <h3>Random Photography</h3>
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <p>
+              “If I have any ‘message’ worth giving to a beginner it is that there are no shortcuts in photography.”<br>
+            </p>
+            <a href="#">See All</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="monument_div">
+
+    </div>
+    </div>
 </body>
 </html>
 
-</body>
-</html>
