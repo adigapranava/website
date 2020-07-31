@@ -1,8 +1,9 @@
 body{			/*body*/
 	margin: 0;
 	padding: 0;
-	background-color: #1F6853;
-	color: #00FFDF;
+	background-image: linear-gradient(to top, rgba(25,77,66,0.5), rgba(25,77,66,1)); /* Standard syntax (must be last) */
+  min-height: 100vh;
+	color: #CBC1C0;
 }
 
 .header{   		/*headder*/
@@ -12,12 +13,13 @@ body{			/*body*/
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
   background-color: #85929E;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  transition: 0.5s;
+  transform: translateY(-350px);
 }
 
 .dropdown-content a {
@@ -25,6 +27,7 @@ body{			/*body*/
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: 0.5s;
   text-align: left;
 }
 
@@ -35,10 +38,15 @@ body{			/*body*/
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transform: translateY(-100px);
+}
+
+.navi_bar:hover{
+  box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.6);
 }
 
 .dropdown:hover{
-  background-color: #000000;
+  background-color: #000;
 }
 
 .top_navi_bar{
@@ -61,20 +69,22 @@ ul{		/*top navigation*/
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #678976;
+  background-color: #17202A;
   position: -webkit-sticky; /* Safari */
   position: sticky;
+  opacity: 1;
+  z-index: 5;
   top: 0;
 }
 
 .flex_img{
   position:absolute;
-  top: 50px;
+  top: 150px;
 }
 
 li {
   float: left;
-  width: 25%;
+  width: 33.33%;
 }
 li a {
   display: block;
@@ -84,9 +94,147 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #212F3D;
+li a:hover:not(.active) {
+  background-color: #021D34;
 }
 .active {
-  background-color: #2FB57C;
+  background-color: #1C2833;
+  border-left: 10px solid red;
+  border-right: 10px solid red;
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left column */
+.column.side {
+  width: 21%;
+  background: #333; 
+  margin:  2% 1% 2% 1%;
+  box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.6);
+  height: 100%;
+  border-top: 10px solid #29F6C1;
+  border-bottom: 10px solid #29F6C1;
+}
+
+/* Middle column */
+.column.middle {
+  width: 72%;
+  background-color: #333;
+  height: 100%;
+  margin:  2% 1% 2% 1%;
+  box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.6);
+  border-top: 10px solid #29F6C1;
+  border-bottom: 10px solid #29F6C1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container{
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .card {
+  /*float: left;
+  width: 30%;*/
+  position: relative;
+}
+
+.container .card .face
+{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+.container .card .face.face1
+{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1
+{
+  background: #838500; /*#ff0057;*/
+  transform: translateY(0px);
+}
+.container .card .face.face1 .content
+{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content
+{
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img
+{
+  max-width: 100px;
+}
+
+.container .card .face.face1 .content h3
+{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.container .card .face.face2
+{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2
+{
+  transform: translateY(0px);
+}
+
+.container .card .face.face2 .content p
+{
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container .card .face.face2 .content a
+{
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover
+{
+  background: #333;
+  color: #fff;
 }
